@@ -1,5 +1,5 @@
-# dsdist
-R scripts for comprehensive set of distribution testing to fit power law, log-normal, exponential, and Poisson statistical distribution into the feature frequency distributions (i.e. the truth)
+# dsanalysis (Dataset Analysis)
+R scripts, example data sets, and materials (e.g. charts) for quantitative and qualitative analysis of datasets
 
 Please, visit http://canbek.com/dataset for more information.
 
@@ -13,7 +13,8 @@ Please, visit http://canbek.com/dataset for more information.
 3. Extra Materials in an Open Office Spreadsheet (best viewed in LibreOffice)
 
 ## Dataset Distribution Analysis R Scripts
-
+1. Comprehensive set of distribution testing to fit power law, log-normal, exponential, and Poisson statistical distribution into the feature frequency distributions (i.e. the truth)
+2. Data set size categorization
 
 ## Sample Academic Datasets on Android Mobile Benign/Malign Applications (i.e. Goodware/Malware)
 
