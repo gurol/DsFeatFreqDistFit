@@ -14,8 +14,17 @@ Please, visit http://canbek.com/dataset for more information.
 
 ## Dataset Distribution Analysis R Scripts
 1. Comprehensive set of distribution testing to fit power law, log-normal, exponential, and Poisson statistical distribution into the feature frequency distributions (i.e. the truth)
-2. Data set size categorization
+2. Data set size categorization (**will be provided after publication of the manuscript submitted**)
 
 ## Sample Academic Datasets on Android Mobile Benign/Malign Applications (i.e. Goodware/Malware)
-
+Hassle free, ready-to-run data frames for data set frequency distributions to run the R script
+1. ds_dist_benign.RData
+2. ds_dist_benign.RData
 ## Extra Materials in an Open Office Spreadsheet (best viewed in LibreOffice)
+Extra materials: (**will be provided after publication of the manuscript submitted**)
+1. Frequency of permission features per data set per class as a tabular data
+2. Data set quantification chart
+3. Feature frequency distribution along with the plausible statistical distribution fits with the parameters
+4. A comprehensive visualy enhanced table of distribution fit hypothesis tests on power law, log-normal, exponential, and Poisson
+5. The tabulated complete dump of dsdist.R script run
+6. Fitted/nonfitted feature list per best fit statistical distributions
