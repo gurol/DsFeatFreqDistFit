@@ -21,7 +21,7 @@ Hassle free, ready-to-run data frames for data set frequency distributions to ru
 1. ds_dist_benign.RData
 2. ds_dist_benign.RData
 ## Extra Materials in an Open Office Spreadsheet (best viewed in LibreOffice)
-Extra materials: (**will be provided after publication of the manuscript submitted**)
+Extra materials:
 1. Frequency of permission features per data set per class as a tabular data
 2. Data set quantification chart
 3. Feature frequency distribution along with the plausible statistical distribution fits with the parameters
