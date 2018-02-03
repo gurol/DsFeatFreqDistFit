@@ -1,48 +1,62 @@
-dsdist
-======
+---
+title: "dsdist"
+author: Gürol Canbek
+date: 11 January 2018
+output:
+  html_document:
+    keep_md: true
+---
+# dsdist
+@author Gürol Canbek, <gurol44@gmail.com>  
+@references <http://gurol.canbek.com>  
+@keywords distributions, log-normal, power law, Poisson, exponential,
+data sets, feature frequency  
+@title dsdist - R Scripts for Distribution Fitting Testing  
+@date 11 January 2018  
+@version 1.1  
+@note version history  
+December 2017  
+1.1 January 2018, Exponential and Poisson fits  
+1.0 December 2017, The first version  
+@description R scripts for comprehensive set of distribution testing to fit  
+power law, log-normal, exponential, and Poisson statistical distribution  
+into the feature frequency distributions (the truth). A part of dsanalysis  
+ (Dataset Analysis)  
+## libraries
 
-@author Gürol Canbek, <gurol44@gmail.com>
-@references <http://gurol.canbek.com>
-@keywords distributions, log-normal, power law, Poisson, exponential, data sets, feature frequency
-@title dsdist - R Scripts for Distribution Fitting Testing
-@date 11 January 2018
-@version 1.1
-@note version history
-December 2017
-1.1 January 2018, Exponential and Poisson fits
-1.0 December 2017, The first version
-@description R scripts for comprehensive set of distribution testing to fit
-power law, log-normal, exponential, and Poisson statistical distribution
-into the feature frequency distributions (the truth). A part of dsanalysis
-(Dataset Analysis)
-\#\# libraries
 
-``` r
+```r
 library(poweRlaw)
 library(ggplot2)
 library(magrittr)
 library(dplyr)
 ```
 
-    ## 
-    ## Attaching package: 'dplyr'
+```
+## 
+## Attaching package: 'dplyr'
+```
 
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
+```
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+```
 
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
+```
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
 
-``` r
+```r
 source('utils.R', chdir=TRUE)
 ```
 
-Distribution colors
--------------------
+## Distribution colors
 
-``` r
+
+```r
 #               Power-law  Log-Normal Exponent   Poisson
 cols_dist <- c('#fb8072', '#7f4e2C', '#80b1d3', '#49b960')
 col_distpl <- 1
@@ -55,54 +69,56 @@ sign_threshold <- 0.001
 ```
 
 ### testLongTailDistributionsHypotheses
-
-Test the various long tail distribution fit hypothesis for given truth given
-as a feature frequencies or counts per class (e.g. 'Positive' or 'Malign')
-with corresponding feature space names of one or more datasets (ds).
-**Parameters:**
-*class\_name*: Class identifier (e.g. 'Positive' or 'Malign')
-*df\_feat\_freqs\_or\_counts*: Data frame holding feature frequencies or counts per dataset as a column vector
-*df\_ds\_feat\_space\_names*: Data frame holding feature names per dataset as a column vector
-*df\_ds\_sample\_sizes*: Data frame holding sample sizes if the feature distribution is given as a frequency (otherwise: default: NULL)
-*plot\_graph\_compare\_two\_dists*: Plot? (default: TRUE)
-*plot\_graph\_compare\_all\_dist*: Plot? (default: TRUE)
-*plot\_graph\_likelihood\_ratios*: Plot? (default: FALSE)
-**Return:**
-none
-**Details:** Select feature space names in the spreadsheet (hide other columns)
-`df_ds_feat_space_names <- rclip()`
-Select feature frequencies or counts in the spreadsheet (hide other columns)
-`df_feat_freqs_or_counts <- rclip()`
-Select sampe sizes if frequencies are provided
-`df_ds_sample_sizes <- rclip(header=FALSE)`
+Test the various long tail distribution fit hypothesis for given truth given  
+as a feature frequencies or counts per class (e.g. 'Positive' or 'Malign')  
+with corresponding feature space names of one or more datasets (ds).  
+**Parameters:**  
+*class_name*: Class identifier (e.g. 'Positive' or 'Malign')  
+*df_feat_freqs_or_counts*: Data frame holding feature frequencies or counts per dataset as a column vector  
+*df_ds_feat_space_names*:  Data frame holding feature names per dataset as a column vector  
+*df_ds_sample_sizes*: Data frame holding sample sizes if the feature distribution is given as a frequency (otherwise: default: NULL)  
+*plot_graph_compare_two_dists*: Plot? (default: TRUE)  
+*plot_graph_compare_all_dist*: Plot? (default: TRUE)  
+*plot_graph_likelihood_ratios*: Plot? (default: FALSE)  
+**Return:**  
+none  
+**Details:**
+Select feature space names in the spreadsheet (hide other columns)  
+`df_ds_feat_space_names <- rclip()`  
+Select feature frequencies or counts in the spreadsheet (hide other columns)  
+`df_feat_freqs_or_counts <- rclip()`  
+Select sampe sizes if frequencies are provided  
+`df_ds_sample_sizes <- rclip(header=FALSE)`  
 ignore warning message: incomplete final line found by readTableHeader on 'pbpaste'
+ 
+You can save the data frames for later use:
+`save(df_feat_freqs_or_counts, df_ds_feat_space_names, df_ds_sample_sizes, file='Malign.RData')`  
+ 
+*See the Examples*  
+ 
+**Suggested plot file naming schema:**  
+6 inch x 8 inch Landscape for Export | Save as PDF...  
+800 x 600 for Export | Save as Image...  
+Benign_DS0_VuongTest_fitted_powerlaw_vs_lognormal  
+Benign_DS0_VuongTest_fitted_powerlaw_vs_poisson  
+Benign_DS0_VuongTest_fitted_powerlaw_vs_exponential  
+Benign_DS0_VuongTest_powerlaw_vs_fitted_lognormal  
+Benign_DS0_VuongTest_powerlaw_vs_fitted_exponential  
+Benign_DS0_VuongTest_lognormal_vs_fitted_exponential  
+Benign_DS0_fitted_powerlaw_against_others  
+Benign_DS0_fitted_lognormal_against_others  
+Benign_DS0_fitted_exponential_against_others  
+Benign_DS0_bootstrapt_powerlaw_fit  
+Benign_DS0_bootstrapt_lognormal_fit  
+Benign_DS5_bootstrapt_exponential_fit  
+Benign_DS0_LogLikelihoodRatioDistribution_fitted_powerlaw_vs_lognormal  
+Benign_DS0_LogLikelihoodRatioDistribution_powerlaw_vs_fitted_lognormal  
+**Warning:**  
+Unsolved exception when plot_graph_likelihood_ratios=TRUE  
+**Examples:** `testLongTailDistributionsHypotheses('Benign', df_feat_freqs_or_counts, df_ds_feat_space_names, df_ds_sample_sizes, no_sim_count=50)`  
 
-You can save the data frames for later use: `save(df_feat_freqs_or_counts, df_ds_feat_space_names, df_ds_sample_sizes, file='Malign.RData')`
 
-*See the Examples*
-
-**Suggested plot file naming schema:**
-6 inch x 8 inch Landscape for Export | Save as PDF...
-800 x 600 for Export | Save as Image...
-Benign\_DS0\_VuongTest\_fitted\_powerlaw\_vs\_lognormal
-Benign\_DS0\_VuongTest\_fitted\_powerlaw\_vs\_poisson
-Benign\_DS0\_VuongTest\_fitted\_powerlaw\_vs\_exponential
-Benign\_DS0\_VuongTest\_powerlaw\_vs\_fitted\_lognormal
-Benign\_DS0\_VuongTest\_powerlaw\_vs\_fitted\_exponential
-Benign\_DS0\_VuongTest\_lognormal\_vs\_fitted\_exponential
-Benign\_DS0\_fitted\_powerlaw\_against\_others
-Benign\_DS0\_fitted\_lognormal\_against\_others
-Benign\_DS0\_fitted\_exponential\_against\_others
-Benign\_DS0\_bootstrapt\_powerlaw\_fit
-Benign\_DS0\_bootstrapt\_lognormal\_fit
-Benign\_DS5\_bootstrapt\_exponential\_fit
-Benign\_DS0\_LogLikelihoodRatioDistribution\_fitted\_powerlaw\_vs\_lognormal
-Benign\_DS0\_LogLikelihoodRatioDistribution\_powerlaw\_vs\_fitted\_lognormal
-**Warning:**
-Unsolved exception when plot\_graph\_likelihood\_ratios=TRUE
-**Examples:** `testLongTailDistributionsHypotheses('Benign', df_feat_freqs_or_counts, df_ds_feat_space_names, df_ds_sample_sizes, no_sim_count=50)`
-
-``` r
+```r
 testLongTailDistributionsHypotheses<-function(
   class_name, df_feat_freqs_or_counts, df_ds_feat_space_names,
   df_ds_sample_sizes=NULL, no_sim_count=NULL,
@@ -140,28 +156,28 @@ testLongTailDistributionsHypotheses<-function(
 ```
 
 ### testLongTailDistributionsHypothesis
-
-Test the various long tail distribution fit hypothesis for given truth given
-as a feature frequencies or counts for given a class (e.g. 'Positive' or 'Malign')
-with corresponding feature space names of one dataset (ds).
-**Parameters:**
-*ds\_name*: Dataset name (e.g. 'DS1')
-*ds\_class\_name*: Class identifier (e.g. 'Positive' or 'Malign')
-*ds\_feat\_space\_names*: Feature names
-*ds\_feat\_freqs\_or\_counts*: Feature frequencies or counts
-*ds\_sample\_size*: Sample size if the feature distribution is given as a frequency (otherwise: default: NULL)
-*threads*: Number of CPU cores (default: extractef from the system)
-*no\_sim\_count*: Number of simulation count for bootstrap test (default: NULL)
-*plot\_graph\_compare\_two\_dists*: Plot? (default: TRUE)
-*plot\_graph\_compare\_all\_dist*: Plot? (default: TRUE)
-*plot\_graph\_likelihood\_ratios*: Plot? (default: FALSE)
-**Return:**
-list(bs\_power\_law, bs\_log\_normal, bs\_exponential) bootstrap objects
+Test the various long tail distribution fit hypothesis for given truth given  
+as a feature frequencies or counts for given a class (e.g. 'Positive' or 'Malign')  
+with corresponding feature space names of one dataset (ds).  
+**Parameters:**  
+*ds_name*: Dataset name (e.g. 'DS1')  
+*ds_class_name*: Class identifier (e.g. 'Positive' or 'Malign')  
+*ds_feat_space_names*:  Feature names  
+*ds_feat_freqs_or_counts*: Feature frequencies or counts  
+*ds_sample_size*: Sample size if the feature distribution is given as a frequency (otherwise: default: NULL)  
+*threads*: Number of CPU cores (default: extractef from the system)  
+*no_sim_count*: Number of simulation count for bootstrap test (default: NULL)  
+*plot_graph_compare_two_dists*: Plot? (default: TRUE)  
+*plot_graph_compare_all_dist*: Plot? (default: TRUE)  
+*plot_graph_likelihood_ratios*: Plot? (default: FALSE)  
+**Return:**  
+list(bs_power_law, bs_log_normal, bs_exponential) bootstrap objects  
 **Details:**
 
-**Examples:** `testLongTailDistributionsHypothesis('DS0', 'Benign', ds_feat_space_names, ds_feat_freqs, 264303, no_sim_count=5)`
+**Examples:** `testLongTailDistributionsHypothesis('DS0', 'Benign', ds_feat_space_names, ds_feat_freqs, 264303, no_sim_count=5)`  
 
-``` r
+
+```r
 testLongTailDistributionsHypothesis<-function(
   ds_name, ds_class_name, ds_feat_space_names, ds_feat_freqs_or_counts,
   ds_sample_size=NULL, threads=getNumberOfCPUCores(), no_sim_count=NULL,
@@ -878,20 +894,20 @@ testLongTailDistributionsHypothesis<-function(
 ```
 
 ### plotDistributionsLikelyhoodRatios
+Plot two compared distributions' log-likelihood ratio tests  
+**Parameters:**  
+*dataset_class*: Class identifier (e.g. 'Positive' or 'Malign')  
+*compdist_dist1_dist2*: Distribution comparison object  
+*dist1_name*:  The name of the 1st distribution  
+*dist2_name*:  The name of the 2nd distribution  
+*col_dist1*:  The color of the 1st distribution  
+*col_dist2*:  The color of the 2nd distribution  
+*which_dist_is_closer_the_truth*:  Which distribution is closer the truth?  
+**Return:**  
+none  
 
-Plot two compared distributions' log-likelihood ratio tests
-**Parameters:**
-*dataset\_class*: Class identifier (e.g. 'Positive' or 'Malign')
-*compdist\_dist1\_dist2*: Distribution comparison object
-*dist1\_name*: The name of the 1st distribution
-*dist2\_name*: The name of the 2nd distribution
-*col\_dist1*: The color of the 1st distribution
-*col\_dist2*: The color of the 2nd distribution
-*which\_dist\_is\_closer\_the\_truth*: Which distribution is closer the truth?
-**Return:**
-none
 
-``` r
+```r
 plotDistributionsLikelyhoodRatios <- function(dataset_class,
                                               compdist_dist1_dist2,
                                               dist1_name, dist2_name,
@@ -924,16 +940,16 @@ plotDistributionsLikelyhoodRatios <- function(dataset_class,
 ```
 
 ### getCommonFeatures
+Return the intersection of feature names given as a comma seperated list per dataset (i.e. Copy)  
+**Parameters:**  
+*ds_fit_unfit_features*: Performance metric  
+*split*: Seperator between column values (default: ', ')  
+**Return:**  
+common_features as character vector  
+**Examples:**  
 
-Return the intersection of feature names given as a comma seperated list per dataset (i.e. Copy)
-**Parameters:**
-*ds\_fit\_unfit\_features*: Performance metric
-*split*: Seperator between column values (default: ', ')
-**Return:**
-common\_features as character vector
-**Examples:**
 
-``` r
+```r
 # 1) Open datasets.ods file  
 # 2) Select Features (Permissions) cells in dsdist (fit features) worksheet  
 #      for the following filters  
@@ -966,3 +982,4 @@ getCommonFeatures<-function(ds_fit_unfit_features, split=', ')
   return(common_features)
 }
 ```
+
