@@ -1,7 +1,4 @@
 ---
-title: "dsdist"
-author: Gürol Canbek
-date: 11 January 2018
 output:
   html_document:
     keep_md: true
