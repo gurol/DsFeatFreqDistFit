@@ -1,5 +1,6 @@
 # dsdist
 @author Gürol Canbek, <gurol44@gmail.com>  
+Copyright (C) 2017-2018 Gürol CANBEK  
 @references <http://gurol.canbek.com>  
 @keywords distributions, log-normal, power law, Poisson, exponential,
 data sets, feature frequency  
