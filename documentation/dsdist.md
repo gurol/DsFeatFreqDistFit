@@ -1,8 +1,3 @@
----
-output:
-  html_document:
-    keep_md: true
----
 # dsdist
 @author Gürol Canbek, <gurol44@gmail.com>  
 @references <http://gurol.canbek.com>  
@@ -27,23 +22,6 @@ library(poweRlaw)
 library(ggplot2)
 library(magrittr)
 library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
 ```
 
 ```r
