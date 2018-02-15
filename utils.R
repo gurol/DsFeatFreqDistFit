@@ -1,13 +1,15 @@
+#' # dsdist
 #' @author Gürol Canbek, <gurol44@gmail.com>  
+#' Copyright (C) 2017-2018 Gürol CANBEK  
 #' @references <http://gurol.canbek.com>  
 #' @keywords utilities, common functions  
 #' @title utils - Common utility R functions  
 #' @date 1 January 2017  
-#' @version 1.1  
+#' @version 1.2  
 #' @note version history  
+#' 1.1, 14 February 2018, Column name checking avoiding parameter for rclip
 #' 1.0, 1 February 2017, The first version  
 #' @description Common R functions that can be called from other scripts
-#' Copyright (C) 2017-2018 Gürol Canbek
 
 #' libraries  
 library(parallel)
@@ -67,6 +69,7 @@ wclip <- function(metric, sep='\t', na='NA', dec='.',
 #' *dec*: Decimal seperator (default: '.')  
 #' *header*: Does source have column names (header)? (default: TRUE)  
 #' *stringsAsFactors*:Should character vectors be converted to factors? (default: FALSE)  
+#' *check.names*: Avoid addition of "X" prefix into column names (default: FALSE)
 #' **Return:**  
 #' Readed data frame  
 #' **Details:**  
@@ -75,15 +78,17 @@ wclip <- function(metric, sep='\t', na='NA', dec='.',
 #' ignore warning message: incomplete final line found by readTableHeader on 'pbpaste'
 #' **Examples:** `ACC <- rclip()` or `ACC <- wclip(dec= ',')`  
 rclip <- function(sep='\t', na='NA', dec='.', header=TRUE,
-                  stringsAsFactors=FALSE)
+                  stringsAsFactors=FALSE, check.names=FALSE)
 {
   if (.Platform$OS.type == 'windows')
     values <- read.table('clipboard-256', sep=sep, dec=dec, header=header,
-                         stringsAsFactors=stringsAsFactors)
+                         stringsAsFactors=stringsAsFactors,
+                         check.names=check.names)
   else {
     clip <- pipe('pbpaste')
     values <- read.table(file=clip, sep=sep, na=na, dec=dec, header=header,
-                         stringsAsFactors=stringsAsFactors)
+                         stringsAsFactors=stringsAsFactors,
+                         check.names=check.names)
   }
   
   return(values)
