@@ -1,19 +1,22 @@
+#' # dsdist
 #' @author Gürol Canbek, <gurol44@gmail.com>  
+#' Copyright (C) 2017-2018 Gürol CANBEK  
 #' @references <http://gurol.canbek.com>  
-#' @keywords distributions, log-normal, power law, Poisson, exponential, data sets, feature frequency
-#' @title dsdist - R Scripts for Distribution Fitting Testing
-#' @date 11 January 2018
-#' @version 1.1
-#' @note version history
-#' December 2017
-#' 1.1 January 2018, Exponential and Poisson fits
-#' 1.0 December 2017, The first version
-#' @description R scripts for comprehensive set of distribution testing to fit
-#' power law, log-normal, exponential, and Poisson statistical distribution
-#' into the feature frequency distributions (the truth). A part of dsanalysis
-#'  (Dataset Analysis)
+#' @keywords distributions, log-normal, power law, Poisson, exponential,
+#' data sets, feature frequency  
+#' @title dsdist - R Scripts for Distribution Fitting Testing  
+#' @date 11 January 2018  
+#' @version 1.1  
+#' @note version history  
+#' December 2017  
+#' 1.1 January 2018, Exponential and Poisson fits  
+#' 1.0 December 2017, The first version  
+#' @description R scripts for comprehensive set of distribution testing to fit  
+#' power law, log-normal, exponential, and Poisson statistical distribution  
+#' into the feature frequency distributions (the truth). A part of dsanalysis  
+#'  (Dataset Analysis)  
 
-#' libraries
+#' ## libraries
 library(poweRlaw)
 library(ggplot2)
 library(magrittr)
@@ -21,7 +24,7 @@ library(dplyr)
 
 source('utils.R', chdir=TRUE)
 
-# Distribution colors
+#' ## Distribution colors
 #               Power-law  Log-Normal Exponent   Poisson
 cols_dist <- c('#fb8072', '#7f4e2C', '#80b1d3', '#49b960')
 col_distpl <- 1
