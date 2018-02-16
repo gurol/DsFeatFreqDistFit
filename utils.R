@@ -150,7 +150,7 @@ plotToDeviceOrFile<-function(data, col=NULL,
                              res=300)
 {
   if (FALSE == is.null(filepath)) {
-    png(filename=filepath, witdth=width, height=height, units=units, res=res)
+    png(filename=filepath, width=width, height=height, units=units, res=res)
   }
   plot(data, col=col, main=main_title, xlab=xlabel)
   if (FALSE == is.null(filepath)) {
