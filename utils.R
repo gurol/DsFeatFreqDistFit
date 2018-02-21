@@ -7,10 +7,10 @@
 #' @date 16 January 2017  
 #' @version 1.2  
 #' @note version history  
-#' 1.2, 16 Feburary 2018, Plot to devide or PNG file
-#' 1.1, 14 February 2018, Column name checking avoiding parameter for rclip
+#' 1.2, 16 Feburary 2018, Plot to devide or PNG file  
+#' 1.1, 14 February 2018, Column name checking avoiding parameter for rclip  
 #' 1.0, 1 February 2017, The first version  
-#' @description Common R functions that can be called from other scripts
+#' @description Common R functions that can be called from other scripts  
 
 #' libraries  
 library(parallel) # Preinstalled in environment
@@ -18,7 +18,8 @@ library(parallel) # Preinstalled in environment
 #' ### getNumberOfCPUCores
 #' Return the number of CPU cores in the current host  
 #' **Parameters:**  
-#' *logical*: if possible, use the number of physical CPUs/cores (if FALSE) (default: FALSE)  
+#' *logical*: if possible, use the number of physical CPUs/cores (if FALSE)  
+#'            (default: FALSE)  
 #' **Return:**  
 #' Number of CPU cores  
 getNumberOfCPUCores<-function(logical=FALSE)
@@ -69,7 +70,8 @@ wclip <- function(metric, sep='\t', na='NA', dec='.',
 #' *na*:  Not Available identifier (default: 'NA')  
 #' *dec*: Decimal seperator (default: '.')  
 #' *header*: Does source have column names (header)? (default: TRUE)  
-#' *stringsAsFactors*:Should character vectors be converted to factors? (default: FALSE)  
+#' *stringsAsFactors*: Should character vectors be converted to factors?  
+#'                     (default: FALSE)  
 #' *check.names*: Avoid addition of "X" prefix into column names (default: FALSE)
 #' **Return:**  
 #' Readed data frame  
@@ -128,6 +130,20 @@ renameDataFrameColumn<-function(df, column_name, new_column_name)
   return(df)
 }
 
+#' ### emptyDataFrame
+#' Create and return an empty data frame with given column names  
+#' **Parameters:**  
+#' *column_names*: column names vector  
+#' **Return:**  
+#' new data frame  
+#' **Details:**  
+#' **Examples:** `df <- emptyDataFrame(c('Col1', 'Col2'))`  
+emptyDataFrame<-function(column_names)
+{
+  return(setNames(
+    data.frame(matrix(ncol=length(column_names), nrow=0)), column_names))
+}
+
 #' ### plotToDeviceOrFile
 #' Plot a graphic to a device of a PNG file (if a file name is given)  
 #' **Parameters:**  
@@ -140,7 +156,8 @@ renameDataFrameColumn<-function(df, column_name, new_column_name)
 #' *height*: the height of the device/file (default: 15cm)  
 #' *units*: The units in which height and width are given (default: 'cm')
 #'          Could be 'in', 'px', 'mm'  
-#' *res*: The nominal resolution in ppi which will be recorded in the bitmap file (default: 300)  
+#' *res*: The nominal resolution in ppi which will be recorded in the bitmap  
+#' file (default: 300)  
 #' **Return:**  
 #' none  
 #' **Examples:** `plotToDeviceOrFile(data, filepath='fig1.png')`  
