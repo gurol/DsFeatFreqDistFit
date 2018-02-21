@@ -17,10 +17,10 @@
 #'  (Dataset Analysis)  
 
 #' ## libraries
+library(ggplot2)  # Preinstalled in environment
+library(magrittr) # Preinstalled in environment
+library(dplyr)    # Preinstalled in environment
 library(poweRlaw)
-library(ggplot2)
-library(magrittr)
-library(dplyr)
 
 source('utils.R', chdir=TRUE)
 
@@ -83,7 +83,7 @@ sign_threshold <- 0.001
 #' Benign_DS0_LogLikelihoodRatioDistribution_powerlaw_vs_fitted_lognormal  
 #' **Warning:**  
 #' Unsolved exception when plot_graph_likelihood_ratios=TRUE  
-#' **Examples:** `testLongTailDistributionsHypotheses('Benign', df_feat_freqs_or_counts, df_ds_feat_space_names, df_ds_sample_sizes, no_sim_count=50)`  
+#' **Examples:** `testLongTailDistributionsHypotheses('Benign', df_ds_feat_freqs, df_ds_feat_space_names, df_ds_sample_sizes, no_sim_count=50)`  
 testLongTailDistributionsHypotheses<-function(
   class_name, df_feat_freqs_or_counts, df_ds_feat_space_names,
   df_ds_sample_sizes=NULL, no_sim_count=NULL,
