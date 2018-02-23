@@ -42,10 +42,15 @@ It provides ready-to-run open-source R scripts, example data sets, and materials
 ```
 ## Sample Outputs
 ![](https://raw.githubusercontent.com/gurol/dsanalysis/master/temp/figBenign_DS0_fitLn_vs_All.png)
+
 *Figure 1. Benign data set plausibility of log-normal distribution fit and others*
+
 ![](https://raw.githubusercontent.com/gurol/dsanalysis/master/temp/figBenign_DS0_fitPl_vs_All.png)
+
 *Figure 2. Benign data set plausibility of power law distribution fit and others*
+
 ![](https://raw.githubusercontent.com/gurol/dsanalysis/master/temp/figMalign_DS3_fitEx_vs_All.png)
+
 *Figure 3. Malign (malware) data set plausibility of exponential distribution fit and others*
 
 ## Dataset Distribution Analysis R Scripts
