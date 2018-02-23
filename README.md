@@ -40,6 +40,13 @@ It provides ready-to-run open-source R scripts, example data sets, and materials
             └── fig(Benign/Malign)_DSi_Likelihood_[fit](Pl/Ln)_vs_[fit](Ex/Ln).png : Vuong's test showing colored log-likelihood plots for the two distributions compared (according to one of the distribution's fit)
             └── fig(Benign/Malign)_DSi_Vuong_[fit](Pl/Ln/Ex/Po)_vs_[fit](Pl/Ln/Ex/Po).png : Vuong's test showing log-likelihood plots for the two distributions compared (according to one of the distribution's fit)
 ```
+## Sample Outputs
+![](https://raw.githubusercontent.com/gurol/dsanalysis/master/temp/figBenign_DS0_fitLn_vs_All.png)
+*Figure 1. Benign data set plausibility of log-normal distribution fit and others*
+![](https://raw.githubusercontent.com/gurol/dsanalysis/master/temp/figBenign_DS0_fitPl_vs_All.png)
+*Figure 2. Benign data set plausibility of power law distribution fit and others*
+![](https://raw.githubusercontent.com/gurol/dsanalysis/master/temp/figMalign_DS3_fitEx_vs_All.png)
+*Figure 3. Malign (malware) data set plausibility of exponential distribution fit and others*
 
 ## Dataset Distribution Analysis R Scripts
 1. `dsdist.R` Comprehensive set of distribution testing to fit power law, log-normal, exponential, and Poisson statistical distribution into the feature frequency distributions (i.e. the truth)
