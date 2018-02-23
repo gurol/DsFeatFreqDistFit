@@ -4,10 +4,10 @@ It provides ready-to-run open-source R scripts, example data sets, and materials
 
 **Note**: Please, cite our study if you would like to use and/or adapt the code, datasets, methodology, and other materials provided and [let us know](mailto:gurol@canbek.com). Thank you for your interest.
 
-> Gürol Canbek, Seref Sagiroglu, and Tugba Taskaya Temizel. A New Approach to Quantifying and Categorizing Data Sets. In *[Journal of Machine Learning Research (JMLR)](http://www.jmlr.org/)*, Submitted, 2018.
+> [Gürol Canbek](http://gurol.canbek.com), Seref Sagiroglu, and Tugba Taskaya Temizel. A New Approach to Quantifying and Categorizing Data Sets. In *[Journal of Machine Learning Research (JMLR)](http://www.jmlr.org/)*, Submitted, 2018.
 
-Code updates at [https://github.com/gurol/dsanalysis](https://github.com/gurol/dsanalysis)
-Methodology updates at [http://canbek.com/dataset](http://canbek.com/dataset)
+- Code updates at [https://github.com/gurol/dsanalysis](https://github.com/gurol/dsanalysis)
+- Methodology updates at [http://canbek.com/dataset](http://canbek.com/dataset)
 
 ## Contents
 1. Dataset Distribution Analysis R Scripts
