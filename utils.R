@@ -1,4 +1,4 @@
-#' # dsdist
+#' # utils
 #' @author Gürol Canbek, <gurol44@gmail.com>  
 #' Copyright (C) 2017-2018 Gürol CANBEK  
 #' @references <http://gurol.canbek.com>  
@@ -14,6 +14,8 @@
 
 #' libraries  
 library(parallel) # Preinstalled in environment
+
+plot_to_device <- 'Device'
 
 #' ### getNumberOfCPUCores
 #' Return the number of CPU cores in the current host  
@@ -158,16 +160,23 @@ emptyDataFrame<-function(column_names)
 #'          Could be 'in', 'px', 'mm'  
 #' *res*: The nominal resolution in ppi which will be recorded in the bitmap  
 #' file (default: 300)  
+#' *file_type*: Type of the file if filepath is provided: 'png', 'pdf'  
+#'              (default: 'png')  
 #' **Return:**  
 #' none  
 #' **Examples:** `plotToDeviceOrFile(data, filepath='fig1.png')`  
 plotToDeviceOrFile<-function(data, col=NULL,
                              main_title=NULL, xlabel=NULL, ylabel=NULL,
                              filepath=NULL, width=20, height=15, units='cm',
-                             res=300)
+                             res=300, file_type='png')
 {
-  if (FALSE == is.null(filepath)) {
-    png(filename=filepath, width=width, height=height, units=units, res=res)
+  if (filepath != plot_to_device) {
+    if (file_type == 'png') {
+      png(filename=filepath, width=width, height=height, units=units, res=res)
+    }
+    else {
+      pdf(filename=filepath, width=width, height=height, units=units, res=res)
+    }
   }
   plot(data, col=col, main=main_title, xlab=xlabel)
   if (FALSE == is.null(filepath)) {
