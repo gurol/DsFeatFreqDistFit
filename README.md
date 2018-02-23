@@ -1,16 +1,13 @@
-# A Research Compedium of "A New Approach to Quantifying and Categorizing Data Sets"
-This platform is an interactive research compedium of our academic publication.
-It provides ready-to-run open-source R scripts, example data sets, and materials (e.g. tabular data and graphics) for quantifying and categorizing machine learning data sets by the methodology proposed in our application.
+# Data Set Analysis: A Research Compedium of "A New Approach to Quantifying and Categorizing Data Sets"
+This developing respository is a research compedium of our academic publication.
+It provides ready-to-run open-source R scripts, example data sets, and materials (e.g. tabular data and graphics) for quantifying and categorizing machine learning data sets by the methodology proposed in our article.
 
 **Note**: Please, cite our study if you would like to use and/or adapt the code, datasets, methodology, and other materials provided and [let us know](mailto:gurol@canbek.com). Thank you for your interest.
 
 > Gürol Canbek, Seref Sagiroglu, and Tugba Taskaya Temizel. A New Approach to Quantifying and Categorizing Data Sets. In *[Journal of Machine Learning Research (JMLR)](http://www.jmlr.org/)*, Submitted, 2018.
 
-## Quick Start
-This platform provides **Data** on the bottom-left, **Code** on the top-left pane. You can explore any file by clicking.
-Click **Run** botton ![](https://raw.githubusercontent.com/gurol/dsanalysis/master/temp/run_button.png) on the right of the top toolbar to launch the analysis described in the article. After the run is finished, the files (tabular data and graphics) are populated in the **Results** pane at the right.
-
 Code updates at [https://github.com/gurol/dsanalysis](https://github.com/gurol/dsanalysis)
+Methodology updates at [http://canbek.com/dataset](http://canbek.com/dataset)
 
 ## Contents
 1. Dataset Distribution Analysis R Scripts
