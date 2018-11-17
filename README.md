@@ -1,4 +1,4 @@
-# DsFeatFreqDist - Dataset Feature Frequency Distributions Fitting
+# DsFeatFreqDist - Dataset Feature-Frequency Distributions Fitting
 ### A Research Compedium of "A New Approach to Quantifying and Categorizing Data Sets"
 This developing respository is a research compedium of our academic publication.
 It provides ready-to-run open-source R scripts, example data sets, and materials (e.g. tabular data and graphics) for quantifying and categorizing machine learning data sets by the methodology proposed in our article.
