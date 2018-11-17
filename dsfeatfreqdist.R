@@ -1,6 +1,25 @@
-#' # dsdist
-#' @author Gürol Canbek, <gurol44@gmail.com>  
-#' Copyright (C) 2017-2018 Gürol CANBEK  
+#' DsFeatFreqDist – Dataset Feature-Frequency Distribution Fitting
+#' Copyright (C) 2017-2018 Gürol Canbek  
+#' This file is licensed under
+#' 
+#'   GNU Affero General Public License v3.0, GNU AGPLv3 
+#' 
+#' This program is free software: you can redistribute it and/or modify
+#' it under the terms of the GNU Affero General Public License as published
+#' by the Free Software Foundation, either version 3 of the License, or
+#' (at your option) any later version.
+#'
+#' This program is distributed in the hope that it will be useful,
+#' but WITHOUT ANY WARRANTY; without even the implied warranty of
+#' MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#' GNU Affero General Public License for more details.
+#'
+#' You should have received a copy of the GNU Affero General Public License
+#' along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#' 
+#' See the license file in <https://github.com/gurol/dsfeatfreqdist>
+#'
+#' @author Gürol Canbek, <gurol44@gmail.com>
 #' @references <http://gurol.canbek.com>  
 #' @keywords distributions, log-normal, power law, Poisson, exponential,
 #' data sets, feature frequency  
