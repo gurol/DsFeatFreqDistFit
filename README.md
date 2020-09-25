@@ -1,13 +1,13 @@
 # DsFeatFreqDist - Dataset Feature-Frequency Distributions Fitting
-### A Research Compedium of "A New Approach to Quantifying and Categorizing Data Sets"
+### A Research Compedium of "Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting"
 This developing respository is a research compedium of our academic publication.
-It provides ready-to-run open-source R scripts, example data sets, and materials (e.g. tabular data and graphics) for quantifying and categorizing machine learning data sets by the methodology proposed in our article.
+It provides ready-to-run open-source R scripts, example data sets, and materials (e.g. tabular data and graphics) for quantifying and categorizing machine learning data sets by the methodology proposed in my article.
 
-**Note**: Please, cite our study if you would like to use and/or adapt the code, datasets, methodology, and other materials provided and [let us know](mailto:gurol@canbek.com). Thank you for your interest.
+**Note**: Please, cite the study if you would like to use and/or adapt the code, datasets, methodology, and other materials provided and [let me know](mailto:gurol@canbek.com). Thank you for your interest.
 
-> [Authors](http://gurol.canbek.com) (to be written). A New Approach to Quantifying and Categorizing Data Sets. In *[Journal of Machine Learning Research (JMLR)](http://www.jmlr.org/)*, Submitted, 2018.
+> [Gürol Canbek](http://gurol.canbek.com) (to be written). Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting. In *TBD*, Submitted, 2020.
 
-- Code updates at [https://github.com/gurol/dsanalysis](https://github.com/gurol/dsanalysis)
+- Dataset Feature-Frequency Comparison R Package at [https://github.com/gurol/dsfeatfreqcomp](https://github.com/gurol/dsfeatfreqcomp)
 - Methodology updates at [http://canbek.com/dataset](http://canbek.com/dataset)
 
 ## Contents
