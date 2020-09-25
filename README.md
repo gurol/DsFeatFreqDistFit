@@ -21,7 +21,7 @@ This respository is a research compedium of our academic publication. It provide
 ```
 / [root]
 ├── code
-│   ├── dsdist.R : Script calculating data set distributions and generating all the related figures (more than the article)
+│   ├── dsfeatfreqdist.R : Script calculating data set distributions and generating all the related figures (more than the article)
 │   ├── utils.R : Common utility script used by other scripts
 │   ├── LICENSE : License file
 │   ├── README.md : This help file
@@ -55,8 +55,8 @@ This respository is a research compedium of our academic publication. It provide
 
 *Figure 3. Malign (malware) data set plausibility of exponential distribution fit and others*
 
-## Dataset Distribution Analysis R Scripts
-1. `dsdist.R` Comprehensive set of distribution testing to fit power law, log-normal, exponential, and Poisson statistical distribution into the feature frequency distributions (i.e. the truth)
+## Dataset Distribution Analysis R Scripts (standalone file for testing purposes, refer to the package for the full up-to-date code)
+1. `dsfeatfreqdist.R` Comprehensive set of distribution testing to fit power law, log-normal, exponential, and Poisson statistical distribution into the feature frequency distributions (i.e. the truth)
 2. Data set size categorization (**will be provided after publication of the manuscript submitted**)
 
 ## Sample Academic Datasets on Android Mobile Benign/Malign Applications (i.e. Goodware/Malware)
