@@ -10,7 +10,6 @@ This respository is a research compedium of our academic publication. It provide
 > [Gürol Canbek](http://gurol.canbek.com), Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting. In *TBD*, Submitted, 2020.
 
 - Dataset Feature-Frequency Comparison R Package at [https://github.com/gurol/dsfeatfreqcomp](https://github.com/gurol/dsfeatfreqcomp)
-- Methodology updates at [http://canbek.com/dataset](http://canbek.com/dataset)
 
 ## Contents
 1. Dataset Distribution Analysis R Scripts
