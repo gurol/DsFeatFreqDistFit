@@ -7,7 +7,7 @@ This repository is a research compendium of my academic publication. It provides
 
 **Note**: Please, cite the study if you would like to use or adapt the code, datasets, methodology, and other materials provided and [let me know](mailto:gurol@canbek.com). Thank you for your interest.
 
-> [Gürol Canbek](http://gurol.canbek.com), Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting. In *TBD*, Submitted, 2020.
+> [Gürol Canbek](http://gurol.canbek.com), Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting. In *Data Mining and Knowledge Discovery*, Submitted, 2020.
 
 ## Contents
 1. Dataset Distribution Analysis R Scripts
