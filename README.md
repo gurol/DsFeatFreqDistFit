@@ -3,7 +3,7 @@
 
 [![Last-changedate](https://img.shields.io/badge/last%20change-2020--09--25-brightgreen.svg)](https://github.com/gurol/dsfeatfreqcomp) [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)  [![ORCiD](https://img.shields.io/badge/ORCiD-0000--0002--9337--097X-green.svg)](https://orcid.org/0000-0002-9337-097X)
 
-This repository is a research compendium of our academic publication. It provides ready-to-run open-source R scripts, example data sets, and materials (*e.g.*, tabular data and graphics) for quantifying machine-learning data sets with respect to the fit to four long right-tail statistical distributions, namely power law, log-normal, Poisson, and exponential distributions.
+This repository is a research compendium of my academic publication. It provides ready-to-run open-source R scripts, example data sets, and materials (*e.g.*, tabular data and graphics) for quantifying machine-learning data sets with respect to the fit to four long right-tail statistical distributions, namely power law, log-normal, Poisson, and exponential distributions.
 
 **Note**: Please, cite the study if you would like to use or adapt the code, datasets, methodology, and other materials provided and [let me know](mailto:gurol@canbek.com). Thank you for your interest.
 
