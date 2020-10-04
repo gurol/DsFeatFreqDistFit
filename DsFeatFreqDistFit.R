@@ -1,5 +1,5 @@
-#' DsFeatFreqDist – Dataset Feature-Frequency Distribution Fitting
-#' Copyright (C) 2017-2018 Gürol Canbek  
+#' DsFeatFreqDistFit – Dataset Feature-Frequency Distribution Fitting
+#' Copyright (C) 2017-2020 Gürol Canbek  
 #' This file is licensed under
 #' 
 #'   GNU Affero General Public License v3.0, GNU AGPLv3 
@@ -17,7 +17,7 @@
 #' You should have received a copy of the GNU Affero General Public License
 #' along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #' 
-#' See the license file in <https://github.com/gurol/dsfeatfreqdist>
+#' See the license file in <https://github.com/gurol/DsFeatFreqDistFit>
 #'
 #' @author Gürol Canbek, <gurol44@gmail.com>
 #' @references <http://gurol.canbek.com>  
