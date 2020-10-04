@@ -1,11 +1,11 @@
 # DsFeatFreqDistFit - Dataset Feature-Frequency Distributions Fitting
-### A Research Compedium of "Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting"
+### A Research Compendium of "Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting"
 
 [![Last-changedate](https://img.shields.io/badge/last%20change-2020--09--25-brightgreen.svg)](https://github.com/gurol/dsfeatfreqcomp) [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)  [![ORCiD](https://img.shields.io/badge/ORCiD-0000--0002--9337--097X-green.svg)](https://orcid.org/0000-0002-9337-097X)
 
-This respository is a research compedium of our academic publication. It provides ready-to-run open-source R scripts, example data sets, and materials (e.g. tabular data and graphics) for quantifying machine-learning data sets with respect to the fit to four long right-tail statistical distributions, namely power law, log-normal, Poisson, and exponential distributions.
+This repository is a research compendium of our academic publication. It provides ready-to-run open-source R scripts, example data sets, and materials (*e.g.*, tabular data and graphics) for quantifying machine-learning data sets with respect to the fit to four long right-tail statistical distributions, namely power law, log-normal, Poisson, and exponential distributions.
 
-**Note**: Please, cite the study if you would like to use and/or adapt the code, datasets, methodology, and other materials provided and [let me know](mailto:gurol@canbek.com). Thank you for your interest.
+**Note**: Please, cite the study if you would like to use or adapt the code, datasets, methodology, and other materials provided and [let me know](mailto:gurol@canbek.com). Thank you for your interest.
 
 > [Gürol Canbek](http://gurol.canbek.com), Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting. In *TBD*, Submitted, 2020.
 
@@ -57,7 +57,7 @@ This respository is a research compedium of our academic publication. It provide
 `DsFeatFreqDistFit.R` Comprehensive set of distribution testing to fit power law, log-normal, exponential, and Poisson statistical distribution into the feature frequency distributions (i.e. the truth)
 
 ## Sample Academic Datasets on Android Mobile Benign/Malign Applications (i.e. Goodware/Malware)
-Hassle free, ready-to-run data frames for data set frequency distributions to run the R script (see **Data** pane)
+Hassle-free, ready-to-run data frames for data set frequency distributions to run the R script (see **Data** pane)
 1. `ds_dist_benign.RData`
 2. `ds_dist_benign.RData`
 
@@ -67,6 +67,6 @@ Extra materials:
 2. Data set quantification chart
 3. Feature frequency distribution along with the plausible statistical distribution fits with the parameters
 4. A comprehensive visualy enhanced table of distribution fit hypothesis tests on power law, log-normal, exponential, and Poisson
-5. The tabulated complete dump of dsdist.R script run
+5. The complete tabulated dump of dsdist.R script run
 6. Fitted/nonfitted feature list per best fit statistical distributions
 
