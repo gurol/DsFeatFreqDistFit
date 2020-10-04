@@ -1,4 +1,4 @@
-# DsFeatFreqDist - Dataset Feature-Frequency Distributions Fitting
+# DsFeatFreqDistFit - Dataset Feature-Frequency Distributions Fitting
 ### A Research Compedium of "Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting"
 
 [![Last-changedate](https://img.shields.io/badge/last%20change-2020--09--25-brightgreen.svg)](https://github.com/gurol/dsfeatfreqcomp) [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)  [![ORCiD](https://img.shields.io/badge/ORCiD-0000--0002--9337--097X-green.svg)](https://orcid.org/0000-0002-9337-097X)
@@ -8,8 +8,6 @@ This respository is a research compedium of our academic publication. It provide
 **Note**: Please, cite the study if you would like to use and/or adapt the code, datasets, methodology, and other materials provided and [let me know](mailto:gurol@canbek.com). Thank you for your interest.
 
 > [Gürol Canbek](http://gurol.canbek.com), Gaining Insights in Datasets in the Shade of “Garbage In, Garbage Out” Rationale: Feature-Space Distribution Fitting. In *TBD*, Submitted, 2020.
-
-- Dataset Feature-Frequency Comparison R Package at [https://github.com/gurol/dsfeatfreqcomp](https://github.com/gurol/dsfeatfreqcomp)
 
 ## Contents
 1. Dataset Distribution Analysis R Scripts
